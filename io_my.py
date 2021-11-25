@@ -34,8 +34,3 @@ def download(key, gid=[0], format="csv", outputfile="data/tablesheet"):
 def get_sheet_ids(key, api_key):
 	ret = rq.urlopen("https://docs.googleapis.com/v4/spreadsheets/d/%s/key=%s?&fields=sheets.properties" % (key,api_key))
 	return ret
-
-key = "1QDt5WQos1zbaKSAnhUcLxc2Q4JbaTfXbz5JneOBEvDo"
-api_key = "70f5008cd958bf16b61ad9d7488c0fdba0bced9c"
- 
-#get_sheet_ids(key,api_key)
